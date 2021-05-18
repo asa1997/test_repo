@@ -53,10 +53,10 @@ https://github.com/jobyko/oah-installer
 # Installation and commands 
 
 1. Windows [In Gitbash] [bes with new vm]
-    ### i.   git clone https://github.com/jobyko/oah-installer
-    ### ii.  cd oah-installer && ./install.sh
-    ### iii. oah install -v oah-bes-vm 
-    ### iv.  Use VM which got created while instaling oah-bes-vm to work with bes commands. 
+    #### i.   git clone https://github.com/jobyko/oah-installer
+    #### ii.  cd oah-installer && ./install.sh
+    #### iii. oah install -v oah-bes-vm 
+    #### iv.  Use VM which got created while instaling oah-bes-vm to work with bes commands. 
 
 3. Linux  [Terminal] [bes with new vm]
 Open your favourite terminal and enter the following
