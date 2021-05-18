@@ -1,6 +1,6 @@
  <h2 align="center">Be-Secure</h2>
    
-<p> <center> <h4 align="center"> A Powerfull secure environment provider for your works </h4> </p>
+<p> <center> <h4 align="center"> A secure environment provider for your works </h4> </p>
 
 <!-- TABLE OF CONTENTS -->
 <details open="open">
