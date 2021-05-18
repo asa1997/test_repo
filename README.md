@@ -41,8 +41,15 @@ BeSman is a tool for providing secure environments for user. It provides a conve
 
 # Prerequisite
 
-Please use OAH commands to create Bes installed virtual machine. For moreinformation use below link.
-https://github.com/jobyko/oah-installer
+Please use OAH commands to create Bes installed virtual machine. 
+
+For more details about oah-installar please visit [github page](https://github.com/jobyko/oah-installer/blob/master/README.md) and for oah shell info use [readme](https://github.com/jobyko/oah-shell/blob/master/README.md) for the same.
+
+	oah-installer help in the process of oah shell install. The oah shell will provides oah commands thorugh which user can spin up different oah environment BeSman is one among the environment (oah-bes-vm). 
+	
+	OpenAppHack (OAH) is built on top of opensource DevOps tools. OAH is a vendor neutral environment provisioning approach that enables rapid development and prototyping of open source solution.
+
+
 
 # Installation and commands 
 
