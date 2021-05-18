@@ -61,7 +61,7 @@ https://github.com/jobyko/oah-installer
 3. Linux  [Terminal] [bes with new vm]
 Open your favourite terminal and enter the following
 
-    #####   i.   curl -s https://raw.githubusercontent.com/openapphack/oah-installer/install.sh | bash
+    #####   i.   curl -s https://raw.githubusercontent.com/openapphack/oah-installer/master/install.sh | bash
     #####   ii.  oah install -v oah-bes-vm
     #####   iii. Use created vm to work with bes commands
    
