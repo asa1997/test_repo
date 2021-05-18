@@ -7,10 +7,7 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#BeSman">About The Project</a>
-      <ul>
-        <li><a href="#Mission">Mission</a></li>
-      </ul>
+      <a href="#BeSman">About The Project</a>     
     </li>
     <li>
       <a href="#Command-Line-Interface">Command Line Interface</a>
@@ -33,11 +30,8 @@
 <!-- ABOUT THE PROJECT  -->
 # BeSman 
 
-BeSman or Be-Secure  Manager is an umbrella of open source security projects and utilities tracked by Wipro’s open source security team and its open source partner network. The trusted open source security projects can used to create open source security testing environments and open source enterprise security platforms.
+BeSman or Be-Secure  Manager is a commandline Utility for provision of customized security environments and this utility comes under the Be-Secure project which is a an umbrella of open source security projects and utilities tracked by Wipro’s open source security team and its open source partner network
 
-
-## Mission 
-Establish a collaborative decentralized network of open source security organizations and service providers to create trusted , interoperable and secure open source security tools.
 
 <!-- GETTING STARTED -->
 # Command Line Interface
@@ -112,12 +106,6 @@ ____________________
         $ bes list
         $ bes status        
         $ bes help     
-
-<!-- PARTNERS -->
-## Partners    
-
- 1. Indian Institute of Technology (Bombay)
- 2. Wipro
 
 
 <!-- CONTRIBUTING -->
