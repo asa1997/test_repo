@@ -41,13 +41,13 @@ BeSman is a tool for providing secure environments for user. It provides a conve
 
 # Prerequisite
 
-Please use OAH commands to create Bes installed virtual machine. 
+Please use OAH commands to create Bes installed virtual machine. Use oah-installer to get oah environments/commands. 
 
 For more details about oah-installar please visit [github page](https://github.com/jobyko/oah-installer/blob/master/README.md) and for oah shell info use [readme](https://github.com/jobyko/oah-shell/blob/master/README.md) for the same.
 
-	oah-installer help in the process of oah shell install. The oah shell will provides oah commands thorugh which user can spin up different oah environment BeSman is one among the environment (oah-bes-vm). 
+oah-installer help in the process of oah shell install. The oah shell will provides oah commands through which user can spin up different oah environment BeSman is one among the environment (oah-bes-vm). Both installer and shell comes under OAH initiatives. 
 	
-	OpenAppHack (OAH) is built on top of opensource DevOps tools. OAH is a vendor neutral environment provisioning approach that enables rapid development and prototyping of open source solution.
+OpenAppHack (OAH) is built on top of opensource DevOps tools. OAH is a vendor neutral environment provisioning approach that enables rapid development and prototyping of open source solution.
 
 
 
@@ -58,7 +58,7 @@ For more details about oah-installar please visit [github page](https://github.c
     #####    i.   git clone https://github.com/jobyko/oah-installer
     #####    ii.  cd oah-installer && ./install.sh
     #####    iii. oah install -v oah-bes-vm 
-    #####    iv.  Use VM which got created while instaling oah-bes-vm to work with bes commands. 
+    #####    iv.  Use VM which got created while installing oah-bes-vm to work with bes commands. 
 
 ## 2. Linux  [In Terminal] [bes with new vm]
 
