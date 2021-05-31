@@ -10,8 +10,8 @@
       <a href="#BeSman">About The Project</a>     
     </li>
     <li>
-      <a href="#Command-Line-Interface">Command Line Interface</a>
-    </li>
+      <a href="#Command-Line-Interface">Command Line Interface</a></li>
+    <li><a href="#Prerequisite">Prerequisite</a></li>	  
     <li><a href="#Installation-and-commands">Installation and commands</a></li>
 	       <ul>
         <li><a href="#Install-commands">Install commands</a></li>
@@ -19,8 +19,6 @@
         <li><a href="#Version commands">Version commands</a></li>
        <li><a href="#Other useful commands">Other useful commands</a></li>	       
       </ul>
-    <li><a href="#Prerequisite">Prerequisite</a></li>
-    <li><a href="#Partners">Partners</a></li>
     <li><a href="#Contribution">Contribution</a></li>
     <li><a href="#Acknowledgements">Acknowledgements</a></li>
   </ol>
