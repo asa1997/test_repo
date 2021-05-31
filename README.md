@@ -28,42 +28,32 @@
 <!-- ABOUT THE PROJECT  -->
 # BeSman 
 
-BeSman or Be-Secure  Manager is a commandline Utility for provision of customized security environments and this utility comes under the Be-Secure project which is a an umbrella of open source security projects and utilities tracked by Wipro’s open source security team and its open source partner network
+BeSman or Be-Secure  Manager is a commandline Utility for provision of customized security environments and this utility comes under the Be-Secure project which is a an umbrella of open source security projects and utilities tracked by Wipro’s open source security team and its open source partner network.
 
 
 <!-- GETTING STARTED -->
 # Command Line Interface
-BeSman, (Be-Secure manager) gives you a *bes* command on your shell , you can use it to automate the setup of various development environments required for bes projects  
+BeSman, (Be-Secure manager) gives you the *bes* command on your shell. User can use these bes commands to automate the setting up of various development environments required for bes projects.
 BeSman is a tool for providing secure environments for user. It provides a convenient command line interface for installing, removing and listing Environments.
 
 
 # Prerequisite
 
 Please use OAH commands to create Bes installed virtual machine. Use oah-installer to get oah environments/commands. 
-	
-OpenAppHack (OAH) is built on top of opensource DevOps tools. OAH is a vendor neutral environment provisioning approach that enables rapid development and prototyping of open source solution.
+[OpenAppHack (OAH) is built on top of opensource DevOps tools. OAH is a vendor neutral environment provisioning approach that enables rapid development and prototyping of open source solution.]
 
-For more details about oah-installar please visit [github page](https://github.com/Be-Secure/oah-installer/blob/master/README.md) and for oah shell info use [readme](https://github.com/Be-Secure/oah-shell/blob/master/README.md) for the same.
+For more details about oah-installar, please visit [github page](https://github.com/Be-Secure/oah-installer/blob/master/README.md) and for oah shell info, use [readme](https://github.com/Be-Secure/oah-shell/blob/master/README.md) for the same.
 
-oah-installer will help to install oah shell.  The oah shell will provide oah commands to spin up different oah virtual machines. oah-bes-vm is one of the many virtual machine that can be spun up using oah shell. Both installer and shell comes under OAH initiatives. 
+oah-installer will help to install oah shell.  The oah shell will provide oah commands to spin up different oah virtual machines. The oah-bes-vm is one of the many virtual machine that can be spun up using oah shell. Both installer and shell comes under OAH initiatives. 
 
 
-# Installation and commands 
-	 There are two ways to install bes vm - one for window users and other for linux based users.
+# Installation and commands  
+	Windows users should use Gitbash with mingw. 
 
-## 1. Windows [In Gitbash] [bes with new vm]
-
-        i.   git clone https://github.com/Be-Secure/oah-installer
-        ii.  cd oah-installer && ./install.sh
-        iii. oah install -v oah-bes-vm 
-        iv.  Use VM which got created while installing oah-bes-vm to work with bes commands. 
-
-## 2. Linux  [In Terminal] [bes with new vm]
-
-       i.   curl -s https://raw.githubusercontent.com/openapphack/oah-installer/master/install.sh | bash
-       ii.  oah install -v oah-bes-vm
-       iii. Use created vm to work with bes commands
-   
+        i.   curl -s https://raw.githubusercontent.com/Be-Secure/oah-installer/master/install.sh | bash
+        ii.  oah install -v oah-bes-vm 
+        iii. Use VM which got created while installing oah-bes-vm to work with bes commands. 
+ 
 
 ### Local Installation
 
