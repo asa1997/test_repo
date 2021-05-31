@@ -16,8 +16,8 @@
 	       <ul>
         <li><a href="#Install-commands">Install commands</a></li>
 	<li><a href="#Uninstall-commands">Uninstall commands</a></li>
-        <li><a href="#Version commands">Version commands</a></li>
-       <li><a href="#Other useful commands">Other useful commands</a></li>	       
+        <li><a href="#Version-commands">Version commands</a></li>
+       <li><a href="#Other-useful-commands">Other useful commands</a></li>	       
       </ul>
     <li><a href="#Contribution">Contribution</a></li>
     <li><a href="#Acknowledgements">Acknowledgements</a></li>
