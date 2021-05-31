@@ -42,29 +42,29 @@ BeSman is a tool for providing secure environments for user. It provides a conve
 # Prerequisite
 
 Please use OAH commands to create Bes installed virtual machine. Use oah-installer to get oah environments/commands. 
-
-For more details about oah-installar please visit [github page](https://github.com/jobyko/oah-installer/blob/master/README.md) and for oah shell info use [readme](https://github.com/jobyko/oah-shell/blob/master/README.md) for the same.
-
-oah-installer help in the process of oah shell install. The oah shell will provides oah commands through which user can spin up different oah environment BeSman is one among the environment (oah-bes-vm). Both installer and shell comes under OAH initiatives. 
 	
 OpenAppHack (OAH) is built on top of opensource DevOps tools. OAH is a vendor neutral environment provisioning approach that enables rapid development and prototyping of open source solution.
 
+For more details about oah-installar please visit [github page](https://github.com/Be-Secure/oah-installer/blob/master/README.md) and for oah shell info use [readme](https://github.com/Be-Secure/oah-shell/blob/master/README.md) for the same.
+
+oah-installer will help to install oah shell.  The oah shell will provide oah commands to spin up different oah virtual machines. oah-bes-vm is one of the many virtual machine that can be spun up using oah shell. Both installer and shell comes under OAH initiatives. 
 
 
 # Installation and commands 
+	 There are two ways to install bes vm - one for window users and other for linux based users.
 
 ## 1. Windows [In Gitbash] [bes with new vm]
 
-    #####    i.   git clone https://github.com/jobyko/oah-installer
-    #####    ii.  cd oah-installer && ./install.sh
-    #####    iii. oah install -v oah-bes-vm 
-    #####    iv.  Use VM which got created while installing oah-bes-vm to work with bes commands. 
+        i.   git clone https://github.com/Be-Secure/oah-installer
+        ii.  cd oah-installer && ./install.sh
+        iii. oah install -v oah-bes-vm 
+        iv.  Use VM which got created while installing oah-bes-vm to work with bes commands. 
 
 ## 2. Linux  [In Terminal] [bes with new vm]
 
-    #####   i.   curl -s https://raw.githubusercontent.com/openapphack/oah-installer/master/install.sh | bash
-    #####   ii.  oah install -v oah-bes-vm
-    #####   iii. Use created vm to work with bes commands
+       i.   curl -s https://raw.githubusercontent.com/openapphack/oah-installer/master/install.sh | bash
+       ii.  oah install -v oah-bes-vm
+       iii. Use created vm to work with bes commands
    
 
 ### Local Installation
@@ -84,7 +84,7 @@ Run the following commands on the terminal to manage respective environments.
         $ bes install -env [environment_name] -V [version_tag]
 
         Example   :
-           $ bes install -env bes_dev_ansible -V 0.0.1
+           $ bes install -env bes-ansibledev-env -V 0.0.1
 
 Please run the following command to get the list of other environments and its versions.
 
@@ -97,7 +97,7 @@ Please run the following command to get the list of other environments and its v
         $ bes uninstall -env [environment_name] -V [version]
 
         Example   :
-           $ bes uninstall -env  bes_dev_ansible -V 0.0.1
+           $ bes uninstall -env  bes-ansibledev-env -V 0.0.1
 
 
 ### Version commands:
