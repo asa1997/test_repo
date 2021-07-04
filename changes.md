@@ -18,7 +18,7 @@
 	https://github.com/Be-Secure/stix-shifter
 	https://github.com/Be-Secure/opendxl-ontology
 	
-	NIST SCAP v2 https://github.com/OpenSCAP/openscap
+NIST SCAP v2 https://github.com/OpenSCAP/openscap
 Hyperledger Indy  https://github.com/hyperledger/indy-sdk
 Hyperledger Sawtooth https://github.com/hyperledger/sawtooth-core
 Hyperledger IROHA https://github.com/hyperledger/iroha
