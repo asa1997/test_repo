@@ -34,4 +34,6 @@
 
 
 
+<a href="https://vimeo.com/570839886/50aeb9d751" target="_blank">Demo</a>
+
 ·         Please remove the following content from the section “What is Be-Secure open source security stack” – “There are lot many open source tech stacks out there in the world today. An individual will have a wide variety of open source technologies to choose from for their project needs. Each open source technology has its own security stature. Often this may not be factored in while deciding on the tech stack for an open source project. Considerable effort is spent during the development phase to address the security issues. This effort can be reduced if the security of open source technologies / open source project is identified and addressed before it is being consumed.
