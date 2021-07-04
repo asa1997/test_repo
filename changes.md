@@ -18,6 +18,20 @@
 	https://github.com/Be-Secure/stix-shifter
 	https://github.com/Be-Secure/opendxl-ontology
 	
+	NIST SCAP v2 https://github.com/OpenSCAP/openscap
+Hyperledger Indy  https://github.com/hyperledger/indy-sdk
+Hyperledger Sawtooth https://github.com/hyperledger/sawtooth-core
+Hyperledger IROHA https://github.com/hyperledger/iroha
+Hyperledger URSA https://github.com/hyperledger/ursa
+SAMM   https://github.com/OWASP/samm
+OWTF https://github.com/owtf/owtf
+Security Shepherd Top Ten   https://github.com/OWASP/SecurityShepherd
+
+https://github.com/Be-Secure/indy-sdk
+https://github.com/Be-Secure/sawtooth-core
+https://github.com/Be-Secure/iroha
+https://github.com/Be-Secure/ursa
+	
 	
 
 
