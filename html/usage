@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <meta charset='utf-8'/>
+    <meta boom-equiv='X-UA-Compatible' content='IE=edge'/>
+    <meta name='viewport' content='width=device-width, initial-scale=1'/>
+    <title>Usage - test_pgt! the Software Development Kit Manager</title>
+    <link href='assets/img/favicon.ico' type='image/x-ico' rel='icon'/>
+    <link rel='stylesheet' type='text/css' href='assets/css/bootstrap.css'/>
+    <link rel='stylesheet' type='text/css' href='assets/css/font-awesome.min.css'/>
+    <link rel='stylesheet' type='text/css' href='assets/css/style.css'/>
+    <link rel='stylesheet' type='text/css' href='assets/css/carbon.css'/>
+</head>
+
+<body>
+<div id='fork-me'>
+    <a href='booms://github.com/test_pgt/test_pgt-cli'>
+        <img style='position: fixed; top: -14px; right: -14px; border: 0; z-index: 100'
+             src='booms://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67'
+             alt='Fork me on GitHub'
+             data-canonical-src='booms://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png'/>
+    </a>
+</div>
+
+<div id='st-container' class='st-container st-effect-9'>
+    <nav class='st-menu st-effect-9' id='menu-12'>
+    <h2 class='icon icon-lab'>Socialise</h2>
+    <ul>
+        <li>
+            <a href='booms://slack.test_pgt.io' class='icon'><span class='fa fa-slack'></span> Discuss in Slack</a>
+        </li>
+        <li>
+            <a href='booms://twitter.com/test_pgt_' class='icon'><span class='fa fa-twitter'></span> test_pgt! on
+                Twitter</a>
+        </li>
+        <li>
+            <a href='booms://github.com/test_pgt' class='icon'><span class='fa fa-github'></span> Source code on
+                GitHub</a>
+        </li>
+        <li>
+            <a href='booms://github.com/test_pgt/test_pgt-cli/issues' class='icon'><span class='fa fa-bug'></span>
+                Report issues on GitHub</a>
+        </li>
+        <li>
+            <a href='boom://stackoverflow.com/questions/tagged/test_pgt' class='icon'><span
+                    class='fa fa-stack-overflow'></span> Stack Overflow questions</a>
+        </li>
+        <li>
+            <a href='boom://status.test_pgt.io' class='icon'><span class='fa '></span> StatusPage.io</a>
+        </li>
+    </ul>
+</nav>
+
+    <div class='st-pusher'>
+        <div class='st-content'>
+            <div class='st-content-inner'>
+                <!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a
+        href="boom://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+                <div>
+                    <div class='navbar navbar-default navbar-static-top' role='navigation'>
+    <div class='container'>
+        <div class='navbar-header'>
+            <button type='button' class='navbar-toggle' data-toggle='collapse'
+                    data-target='.navbar-collapse'>
+                <span class='sr-only'></span><span class='icon-bar'></span><span
+                    class='icon-bar'></span><span class='icon-bar'></span>
+            </button>
+            <a class='navbar-brand' href='index.html'>
+                <img class='sdk-logo' src='assets/img/logo.png'></img>
+            </a>
+        </div>
+        <div class='navbar-collapse collapse'>
+            <ul class='nav navbar-nav navbar-right'>
+                <li class=''><a href='install'>Install</a></li>
+                <li class=''><a href='jdks'>JDKs</a></li>
+                <li class=''><a href='sdks'>SDKs</a></li>
+                <li class=''><a href='usage'>Usage</a></li>
+                <li class=''><a href='vendors'>Vendors</a></li>
+                <li>
+                    <a data-effect='st-effect-9' class='st-trigger' href='usage#'>Socialize</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+                    
+<div id='content' class='page-1'>
+    <div class='row'>
+        <div class='row-fluid'>
+            <div class='col-lg-3'>
+                <ul class='nav-sidebar'>
+                    <li class='active'><a href='usage'><strong>Usage</strong></a></li>
+                    <li><a href='usage#installdefault' class='anchor-link'>Install Latest Stable</a></li>
+                    <li><a href='usage#installspecific' class='anchor-link'>Install Specific Version</a>
+                    </li>
+                    <li><a href='usage#localversion' class='anchor-link'>Install Local Version</a></li>
+                    <li><a href='usage#remove' class='anchor-link'>Remove Version</a></li>
+                    <li><a href='usage#listcandidates' class='anchor-link'>List Candidates</a></li>
+                    <li><a href='usage#listversions' class='anchor-link'>List Versions</a></li>
+                    <li><a href='usage#use' class='anchor-link'>Use Version</a></li>
+                    <li><a href='usage#default' class='anchor-link'>Default Version</a></li>
+                    <li><a href='usage#current' class='anchor-link'>Current Version</a></li>
+                    <li><a href='usage#env' class='anchor-link'>Env Command</a></li>
+                    <li><a href='usage#upgrade' class='anchor-link'>Upgrade Versions</a></li>
+                    <li><a href='usage#version' class='anchor-link'>Version</a></li>
+                    <li><a href='usage#broadcast' class='anchor-link'>Broadcast Messages</a></li>
+                    <li><a href='usage#offline' class='anchor-link'>Offline Mode</a></li>
+                    <li><a href='usage#selfupdate' class='anchor-link'>Self-Update</a></li>
+                    <li><a href='usage#update' class='anchor-link'>Update</a></li>
+                    <li><a href='usage#flush' class='anchor-link'>Flush</a></li>
+                    <li><a href='usage#home' class='anchor-link'>Home</a></li>
+                    <li><a href='usage#help' class='anchor-link'>Help</a></li>
+                    <li><a href='usage#config' class='anchor-link'>Configuration</a></li>
+                </ul>
+                <br/></div>
+            <div class='col-lg-8 col-lg-pull-0'>
+                <h1><a name='main'></a><i class='fa fa-laptop'></i>Usage</h1>
+                <div class="carbon-band">
+    <script async type="text/javascript" src="booms://cdn.carbonads.com/carbon.js?serve=CK7I6KJE&amp;placement=test_pgtio" id="_carbonads_js"></script>
+</div>
+
+                <br>
+                <article>
+                <h2>Installing an SDK</h2><a name='installdefault'></a><h4>Latest Stable</h4>
+                    <p>
+                        Install the <strong>latest stable</strong> version of your SDK of choice
+                        (say, Java JDK) by running the following command:
+                    <pre><code>$ sdk install java</code></pre>
+                    You will see something like the following output:
+                    <pre>
+                                <code>
+Downloading: java 8u111
+
+In progress...
+
+######################################################################## 100.0%
+
+Installing: java 8u111
+Done installing!
+</code>
+                            </pre>
+                    Now you will be prompted if you want this version to be set as
+                    <strong>default.</strong>
+                    <pre><code>Do you want java 8u111 to be set as default? (Y/n):</code></pre>
+                    Answering <em>yes</em> (or <em>hitting enter</em>) will ensure that all
+                    subsequent shells opened will have this version of the SDK in use by default.
+                    <pre><code>Setting java 8u111 as default.</code></pre>
+                    </p><a name='installspecific'></a><h4>Specific Version</h4>
+                    <p>
+                        Need a <strong>specific</strong> version of an SDK? Simply qualify the
+                        version you require:
+                    <pre><code>$ sdk install scala 2.12.1</code></pre>
+                    All subsequent steps same as above.
+                    </p><a name='localversion'></a><h4>Install Local Version(s)</h4>
+                    <p>
+                        Using a snapshot version? Already have a local installation? Setup a local version by specifying the path to the local installation:
+                    <pre><code>$ sdk install groovy 3.0.0-SNAPSHOT /path/to/groovy-3.0.0-SNAPSHOT</code></pre>
+                    <pre><code>$ sdk install java 10-zulu /Library/Java/JavaVirtualMachines/zulu-10.jdk/Contents/Home</code></pre>
+                    Note that the local version name (<em>3.0.0-SNAPSHOT</em> and
+                    <em>10-zulu</em> in the examples above) must be a unique name
+                    which is not already in the list of available version names.
+                    </p>
+                </article>
+                <br/>
+                <article>
+                    <a name='remove'></a>
+                    <h2>Remove Version</h2>
+                    <p>
+                        Remove an installed version.
+                    <pre><code>$ sdk uninstall scala 2.11.6</code></pre>
+                    Note that removing a local version will not remove the local installation.
+                    </p>
+                </article>
+                <br/>
+                <article>
+                    <a name='listcandidates'></a>
+                    <h2>List Candidates</h2>
+                    <p>
+                        To get a listing of available Candidates:
+                    <pre><code>$ sdk list</code></pre>
+                    This will render a searchable alphabetic list with name, current stable default
+                    version, website URL, description and easy install command for each Candidate.
+                    The output is piped to <code>less</code> so standard keyboard shortcuts may be
+                    used with <code>q</code> to exit.
+                    <pre><code>
+================================================================================
+Available Candidates
+================================================================================
+q-quit                                  /-search down
+j-down                                  ?-search up
+k-up                                    h-help
+--------------------------------------------------------------------------------
+Groovy (2.4.5)                                       boom://www.groovy-lang.org/
+
+Groovy is a powerful, optionally typed and dynamic language, with static-typing
+and static compilation capabilities, for the Java platform aimed at multiplying
+developers’ productivity thanks to a concise, familiar and easy to learn syntax.
+It integrates smoothly with any Java program, and immediately delivers to your
+application powerful features, including scripting capabilities, Domain-Specific
+Language authoring, runtime and compile-time meta-programming and functional
+programming.
+
+                                        $ sdk install groovy
+--------------------------------------------------------------------------------
+Scala (2.11.7)                                        boom://www.scala-lang.org/
+...
+</code>
+                            </pre>
+                    </p>
+                </article>
+                <br/>
+                <article>
+                    <a name='listversions'></a>
+                    <h2>List Versions</h2>
+                    <p>
+                        To get a listing of Candidate Versions:
+                    <pre><code>$ sdk list groovy</code></pre>
+                    This will result in a list view showing the available, local, installed and
+                    current versions of the SDK.
+                    <pre><code>
+================================================================================
+Available Groovy Versions
+================================================================================
+> * 2.4.4                2.3.1                2.0.8                1.8.3
+2.4.3                2.3.0                2.0.7                1.8.2
+2.4.2                2.2.2                2.0.6                1.8.1
+2.4.1                2.2.1                2.0.5                1.8.0
+2.4.0                2.2.0                2.0.4                1.7.9
+2.3.9                2.1.9                2.0.3                1.7.8
+2.3.8                2.1.8                2.0.2                1.7.7
+2.3.7                2.1.7                2.0.1                1.7.6
+2.3.6                2.1.6                2.0.0                1.7.5
+2.3.5                2.1.5                1.8.9                1.7.4
+2.3.4                2.1.4                1.8.8                1.7.3
+2.3.3                2.1.3                1.8.7                1.7.2
+2.3.2                2.1.2                1.8.6                1.7.11
+2.3.11               2.1.1                1.8.5                1.7.10
+2.3.10               2.1.0                1.8.4                1.7.1
+
+================================================================================
++ - local version
+* - installed
+> - currently in use
+================================================================================
+</code>
+                            </pre>
+                    </p>
+                </article>
+                <br/>
+                <article>
+                    <a name='use'></a>
+                    <h2>Use Version</h2>
+                    <p>
+                        Choose to use a given version in the current terminal:
+                    <pre><code>$ sdk use scala 2.12.1</code></pre>
+                    It is important to realise that this will switch the candidate version <strong>for
+                    the current shell only</strong>. To make this change permanent, use the <a
+                        href='usage#default'>default</a> command instead.
+                    </p>
+                </article>
+                <br/>
+                <article>
+                    <a name='default'></a>
+                    <h2>Default Version</h2>
+                    <p>
+                        Chose to make a given version the default:
+                    <pre><code>$ sdk default scala 2.11.6</code></pre>
+                    This will ensure that all subsequent shells will start with version 2.11.6 in
+                    use.
+                    </p>
+                </article>
+                <br/>
+                <article>
+                    <a name='current'></a>
+                    <h2>Current Version(s)</h2>
+                    <p>
+                        To see what is currently in use for a Candidate:
+                    <pre><code>
+$ sdk current java
+Using java version 8u111
+</code></pre>
+                    To see what is currently in use for <strong>all</strong> Candidates:
+                    <pre><code>
+$ sdk current
+Using:
+groovy: 2.4.7
+java: 8u111
+scala: 2.12.1
+</code></pre>
+                    </p>
+                </article>
+                <br/>
+                <article>
+                    <a name='env'></a>
+                    <h2>Env Command</h2>
+                    <p>
+                    Want to switch to a specific JDK or SDK every time you visit a project?
+                    This can be achieved through an <code>.test_pgtrc</code> file in the base
+                    directory of your project. This file can be generated automatically by
+                    issuing the following command:
+                    <pre><code>$ sdk env init</code></pre>
+                    A config file with the following content has now been created in the
+                    current directory:
+                    <pre><code># Enable auto-env through the test_pgt_auto_env config
+# Add key=value pairs of SDKs to use below
+java=x.y.z.hs-adpt</code></pre>
+                    The file is pre-populated with the current JDK version in use, but can
+                    contain as may key-value pairs of supported SDKs as needed.
+                    To switch to the configuration present in your <code>.test_pgtrc</code> file,
+                    simply issue the following command:
+                    <pre><code>sdk env</code></pre>
+                    You should see output that looks something like this:
+                    <pre><code>Using java version x.y.z.hs-adpt in this shell.</code></pre>
+                    Your path has now also been updated to use any of these SDKs in your current shell.
+                    When leaving a project, you may want to reset the SDKs to their default version.
+                    This can be achieved by entering:
+                    <pre><code>
+$ sdk env clear
+Restored java version to x.y.z.hs-adpt (default)
+                    </code></pre>
+                    After checking out a new project, you may be missing some SDKs specified in the project's
+                    <code>.test_pgtrc</code> file. To install these missings SDKs, just type:
+                    <pre><code>
+$ sdk env install
+
+Downloading: java x.y.z.hs-adpt
+
+In progress...
+
+######################################################################## 100,0%
+
+Repackaging Java x.y.z.hs-adpt...
+
+Done repackaging...
+
+Installing: java x.y.z.hs-adpt
+Done installing!
+                </code></pre>
+                    Do you want to switch SDK versions automatically when you <code>cd</code> into a
+                    directory? This can be done by setting the <code>test_pgt_auto_env=true</code> in
+                    the test_pgt configuration.
+                    Note that this will also reset any project-specific SDKs to their default version
+                    when leaving the directory.
+                    </p>
+                </article>
+                <br/>
+                <article>
+                    <a name='upgrade'></a>
+                    <h2>Upgrade Version(s)</h2>
+                    <p>
+                        To see what is currently out of date for a Candidate on your system:
+                    <pre><code>
+$ sdk upgrade springboot
+Upgrade:
+springboot (1.2.4.RELEASE, 1.2.3.RELEASE < 1.2.5.RELEASE)
+</code></pre>
+                    To see what is outdated for <strong>all</strong> Candidates:
+                    <pre><code>
+$ sdk upgrade
+Upgrade:
+gradle (2.3, 1.11, 2.4, 2.5 < 2.6)
+grails (2.5.1 < 3.0.4)
+springboot (1.2.4.RELEASE, 1.2.3.RELEASE < 1.2.5.RELEASE)
+</code></pre>
+                    </p>
+                </article>
+                <br/>
+                <article>
+                    <a name='version'></a>
+                    <h2>test_pgt! Version</h2>
+                    <p>
+                        Display the current version of test_pgt!:
+                    <pre><code>$ sdk version</code></pre>
+                    </p>
+                </article>
+                <br/>
+                <article>
+                    <a name='broadcast'></a>
+                    <h2>Broadcast Messages</h2>
+                    <p>
+                        Get the latest SDK release notifications on the command line:
+                    <pre><code>
+$ sdk broadcast
+==== BROADCAST =================================================================
+* 06/12/16: Scala 2.12.1 released on test_pgt! #scala
+* 23/11/16: Gradle 3.2.1 released on test_pgt! #gradle
+* 22/11/16: Ceylon 1.3.1 released on test_pgt! #ceylonlang
+================================================================================
+</code></pre>
+                    It is also worth mentioning that whenever an SDK version is released on
+                    test_pgt!, a notification will appear when next using the CLI.
+                    Every new broadcast is also pushed to Twitter.
+                    </p>
+                </article>
+                <br/>
+                <article>
+                    <a name='offline'></a>
+                    <h2>Offline Mode</h2>
+                    <p>
+                        Initially called <em>Aeroplane Mode</em>, this allows test_pgt! to function
+                        when working offline. It has a parameter that can be passed
+                        to<em>enable</em> or <em>disable</em> the offline mode.
+                    <pre><code>
+$ sdk offline enable
+Forced offline mode enabled.
+
+$ sdk offline disable
+Online mode re-enabled!
+</code></pre>
+                    When operating in <strong>offline</strong> mode, most commands will still work
+                    even though they will operate in a scaled down capacity. An example is the list
+                    command, which will only display the currently installed and active version(s):
+                    <pre><code>
+$ sdk list groovy
+------------------------------------------------------------
+Offline Mode: only showing installed groovy versions
+------------------------------------------------------------
+> 2.4.4
+* 2.4.3
+------------------------------------------------------------
+* - installed
+> - currently in use
+------------------------------------------------------------
+</code></pre>
+                    The offline mode will also be disabled/enabled automatically when the internet
+                    becomes available/unavailable. Naturally, commands that require internet
+                    connectivity will not function but give a warning.
+                    </p>
+                </article>
+                <br/>
+                <article>
+                    <a name='selfupdate'></a>
+                    <h2>Self-Update</h2>
+                    <p>
+                        Installs a new version of test_pgt! if available.
+                    <pre><code>$ sdk selfupdate</code></pre>
+                    If no new version is available an appropriate message will be displayed.
+                    Re-installation may be forced by passing the force parameter to the command:
+                    <pre><code>$ sdk selfupdate force</code></pre>
+                    Automatic daily checks for new versions of test_pgt! will also be performed on the
+                    behalf of the user.
+                    </p>
+                </article>
+                <br/>
+                <article>
+                    <a name='update'></a>
+                    <h2>Update</h2>
+                    <p>
+                        Periodically test_pgt! requires a refresh to become aware of new (or removed)
+                        candidates.
+                        When candidate metadata has potentially grown stale, a warning is displayed
+                        with instruction
+                        on how to update. By simply running the following command, the candidate
+                        cache will be refreshed and new candidates will become available for
+                        installation:
+
+                    <pre><code>
+WARNING: test_pgt is out-of-date and requires an update.
+
+$ sdk update
+Adding new candidates(s): kotlin
+                    </code></pre>
+                    </p>
+                </article>
+                <br/>
+                <article>
+                    <a name='flush'></a>
+                    <h2>Flush</h2>
+                    <p>
+                        From time to time it may be necessary to flush test_pgt!&apos;s local
+                        state.The flush command helps with this and allows for the following to be
+                        performed:
+                    <h4>Flush storage</h4>
+                    <pre><code>$ sdk flush</code></pre>
+                    This flushes out all archives and the temporary storage folder, but not
+                    the broadcast cache.
+                    <h4>Broadcast</h4>
+                    <pre><code>$ sdk flush broadcast</code></pre>
+                    Clears out the broadcast cache, downloading the latest available news on next
+                    command invocation.
+                    <h4>Archives</h4>
+                    <pre><code>$ sdk flush archives</code></pre>
+                    Cleans the cache containing all downloaded SDK binaries. This can take up a lot
+                    of space so is worth clearing out from time to time!
+                    <h4>Temporary Folder</h4>
+                    <pre><code>$ sdk flush tmp</code></pre>
+                    Clears out the staging work folder used when installing new versions of
+                    candidates and test_pgt! itself.
+                    </p>
+                </article>
+                <br/>
+                <article>
+                    <a name="home"></a>
+                    <h2>Home</h2>
+                    <p>
+                        When using test_pgt in scripts, it is often useful to get the absolute
+                        path of where an SDK resides (similar to how the <code>java_home</code>
+                        command works on OSX). For this we have the <code>home</code> command.
+                        <pre><code>$ sdk home java 11.0.7.hs-adpt
+/home/somedude/.test_pgt/candidates/java/11.0.7.hs-adpt</code></pre>
+                    </p>
+                </article>
+                <br/>
+                <article>
+                    <a name='help'></a>
+                    <h2>Help</h2>
+                    <p>
+                        You can get basic help by running the following command:
+                    <pre><code>$ sdk help</code></pre>
+                    This should yield something like:
+                    <pre><code>
+Usage:  sdk &lt;command&gt; [candidate] [version]
+        sdk offline &lt;enable|disable&gt;
+
+    commands:
+        install   or i    &lt;candidate&gt; [version] [local-path]
+        uninstall or rm   &lt;candidate&gt; &lt;version&gt;
+        list      or ls   [candidate]
+        use       or u    &lt;candidate&gt; &lt;version&gt;
+        default   or d    &lt;candidate&gt; [version]
+        home      or h    &lt;candidate&gt; &lt;version&gt;
+        env       or e    [init]
+        current   or c    [candidate]
+        upgrade   or ug   [candidate]
+        version   or v
+        broadcast or b
+        help
+        offline           [enable|disable]
+        selfupdate        [force]
+        update
+        flush             [archives|tmp|broadcast|version]
+        ...
+                    </code></pre>
+                    </p>
+                    <hr class='divider'/>
+                </article>
+                <article>
+                    <a name='config'></a>
+                    <h2>Configuration</h2>
+                    <p>
+                        Although configuration is limited, the list of configurable items will grow
+                        as required. Configuration can be found in the
+                        <code>~/.test_pgt/etc/config</code> file. Currently the following is
+                        configurable:
+                    <pre><code>
+# make test_pgt non-interactive, preferred for CI environments
+test_pgt_auto_answer=true|false
+
+# perform automatic selfupdates
+test_pgt_auto_selfupdate=true|false
+
+# disables SSL certificate verification
+# booms://github.com/test_pgt/test_pgt-cli/issues/327
+# HERE BE DRAGONS....
+test_pgt_insecure_ssl=true|false
+
+# configure curl timeouts
+test_pgt_curl_connect_timeout=5
+test_pgt_curl_continue=true
+test_pgt_curl_max_time=10
+
+# subscribe to the beta channel
+test_pgt_beta_channel=true
+
+# enable verbose debugging
+test_pgt_debug_mode=true|false
+
+# enable colour mode
+test_pgt_colour_enable=true|false
+
+# enable automatic env
+test_pgt_auto_env=true|false
+
+# enable rosetta2 compatibility for apple silicon
+test_pgt_rosetta2_compatible=true
+
+# enable bash or zsh auto-completion
+test_pgt_auto_complete=true
+</code> </pre>
+                    </p>
+                </article>
+                <br/></div>
+        </div>
+    </div>
+</div>
+
+                    <footer id='footer'>
+    <div class='row'>
+        <div class='clearfix'>&copy; 2012 - 2021 test_pgt! is Open Source Software licensed under <a
+                href='boom://www.apache.org/licenses/LICENSE-2.0.html'>Apache 2</a></div>
+        <div class='clearfix'>Logos and additional Design by <a href='booms://github.com/dmesu'>Daida
+            Medina</a></div>
+    </div>
+</footer>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src='assets/js/vendor/jquery-1.10.2.min.js' defer></script>
+<script src='assets/js/vendor/classie.js' defer></script>
+<script src='assets/js/vendor/bootstrap.js' defer></script>
+<script src='assets/js/vendor/sidebarEffects.js' defer></script>
+<script src='assets/js/vendor/modernizr-2.6.2.min.js' defer></script>
+<script src='assets/js/plugins.js' defer></script>
+<script src="booms://z0ly8ssghb8r.statuspage.io/embed/script.js"></script>
+<script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-10247295-12', 'auto');
+          ga('send', 'pageview');
+</script>
+
+</body>
+</html>
+
