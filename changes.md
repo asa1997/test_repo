@@ -133,3 +133,29 @@ How to contribute:
 We invite all open source enthusiasts to join our community and enhance your capability as an open source security specialist. To know more about how to contribute to Be-Secure community initiative, please visit the following section ().
 
 For more information on Be-Secure please visit our site.
+
+
+
+Index.md file changes:
+
+![Be-Secure Logo] (be-secure_logo.jpg)
+
+** Be-Secure is an umbrella of open source security projects …..**
+
+## Get started now  ![Get started image](getting_started.jpg)
+
+Understand the relevance of Be-Secure project, what it offers for you. (provide the link to the Gettingstarted.md file)
+
+## Seven stage Be-Secure Community Edition security assessment ![Assessment image](assessment_image.jpg)
+
+Leverage Be-Secure security assessment process to secure your open source projects. (provide the link to the Seven stage Be-Secure security assessment.md file)
+
+## OSS projects ![OSS project image](oss_project.jpg)
+
+Refer the list of OSS projects we track and contribute to. (provide the link to the oss projects.md file)
+
+## Contribute ![contribute image](contribut.jpg)
+
+Use customized environments & share feedback, build new customized environments and more… (provide the link to the how to contribute.md file)
+
+ 
