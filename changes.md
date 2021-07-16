@@ -159,3 +159,9 @@ Refer the list of OSS projects we track and contribute to. (provide the link to 
 Use customized environments & share feedback, build new customized environments and more… (provide the link to the how to contribute.md file)
 
  
+------------------------------
+<div class="container">
+ <div class="hero-inner">
+ <p style="text-align: center;">KOB is a technology demonstrator to launch a DID based public identity utility compliant with the ToIP standards to enable Trusted digital verification service for various association within the city of Kochi.</p>
+ </div>
+ </div>
