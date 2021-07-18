@@ -6,13 +6,38 @@
   box-sizing: border-box;
 }
 
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #0c3272;
+  color: white;
+}
+
 body {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 15px;
   line-height: 1.42857143;
   color: #333;  
   padding: 10px;
-  background: #f1f1f1;
+  background: #0c3272;
+  /* background: #f1f1f1; */
 }
 
 /* Header/Blog Title */
@@ -111,10 +136,12 @@ body {
 }
 </style>
 </head>
-<body>
+<body >
+
+
 
 <div class="header">
-  <table>
+  <table >
 <tr><td><img src="./dist/images/besec_logo.jpg" style="width: 120px; height: 120px;"></td></tr>
   </table>
   <br><b>An umbrella of open source security projects and utilities</b>
@@ -122,6 +149,9 @@ body {
 
 <div class="topnav">
   <a href="./base.html">Home</a>
+  <a href="./tech-stack.html" style="float:right">Tech stack</a>
+  <a href="./security-analysis.html" style="float:right">Analysis</a>
+</div>
 
   <!-- <a href="#" style="float:right">Next page</a> -->
 </div>
@@ -133,19 +163,44 @@ body {
 
 
       <p>We have grouped various open source technologies into 5 main categories. By doing so, it will help us to take appropriate security measures and processes to enhance the security of these open source tech stacks.</p>
+
+
+ <center>
+      <table  >
+        <tr>
+          <td>
+            <a href="#security-for-devops-tools">
+                <img alt="alt text" src="./dist/images/iido.jpeg" width="160px" height="160px">
+            </a>
+          </td>
+          <td><a href="#distributed-application-and-blockchain-security"> 
+              <img alt="alt text" src="./dist/images/iida.jpeg" width="160px" height="160px">
+          </a>
+         </td>
+          <td><a href="#application-security"><img alt="alt text" src="./dist/images/iia.jpeg" width="160px" height="160px">
+          </a>
+         </td>
+          <td><a href="#open-source-security-tool"><img alt="alt text" src="./dist/images/iis.jpeg" width="160px" height="160px"> 
+          </a>
+        </td>
+          <td><a href="#language-and-framework-security"><img alt="alt text" src="./dist/images/iilf.jpeg" width="160px" height="160px"> </a>
+          </td>
+        </tr>
+      </table>
+    </center>
       <p>We should be able to accommodate almost all the existing open source technologies in any one of the 5 categories. The categories are defined based on the common characteristics and usage of the respective open source technologies.</p>
-      <p><img alt="alt text" src="../../img/techstack.PNG" /></p>
+     
       <p>At present, All tech stack and related applications are under Requirement gathering and analysis phase.</p>
       <p>Once Requirement gathering and analysis phase completed, each tech stack will be updated with another column named security status which indicates the current security vulnarabilities and fixes status of that application. </p>
       <p><br></p>
-      <h3 id="security-for-devops-tools">Security for DevOps Tools</h3>
+      <h3 id="security-for-devops-tools" style="background-color: slategrey;">Security for DevOps Tools</h3>
       <p>This security stack focuses on all kinds of open source tools used in DevOps and how they can be secured both in terms of it source code and its implementation. This would enable users to implement DevSecOps using secured DevOps tools. The identified DevOps tools will be assessed for security vulnerabilities and remediated.</p>
-      <p>All are in requriment gathering and analysis Phase (R G&amp;A)  </p>
+      <p>All are in requriment gathering and analysis Phase </p>
       <blockquote>
       <p><strong>Ansible</strong></p>
       </blockquote>
-      <table>
-      <thead>
+      <table id="customers" >
+      <thead >
       <tr>
       <th>Sl.No</th>
       <th>BeSman Env name</th>
@@ -160,21 +215,22 @@ body {
       <td>bes-ansibledev-env</td>
       <td>Python, Ruby, bash, ansible-galaxy</td>
       <td>Git, Python, Pypi, VScode, Jenkin, Ansible-galaxy</td>
-      <td>R G&amp;A</td>
+      <td>Research and Analysis</td>
       </tr>
       <tr>
       <td>02</td>
       <td>bes-ansiblesec-env</td>
       <td></td>
       <td>Java, Jenkin, bes-appsastsec-env, Python, Pypi</td>
-      <td>R G&amp;A</td>
+      <td>Research and Analysis</td>
       </tr>
       </tbody>
       </table>
+
       <blockquote>
       <p><strong>Chef</strong></p>
       </blockquote>
-      <table>
+      <table id="customers">
       <thead>
       <tr>
       <th>Sl.No</th>
@@ -190,25 +246,25 @@ body {
       <td>bes-chefdev-env</td>
       <td>Ruby (client) and Ruby / Erlang (server)</td>
       <td>Git, RVM, Ruby, Erlang, VSCode, ChefSpec, Jenkin</td>
-      <td>R G&amp;A</td>
+      <td>Research and Analysis</td>
       </tr>
       <tr>
       <td>02</td>
       <td>bes-chefsec-env</td>
       <td></td>
       <td>Git, RVM, bes-appsastsec-env, bes-appdastsec-env</td>
-      <td>R G&amp;A</td>
+      <td>Research and Analysis</td>
       </tr>
       </tbody>
       </table>
-      <p>Need help to view the  utility version ? <a href="../utility-catelog/">click here</a>
+      <p>Need help to view the  utility version ? <a href="./utility-catelog.html">click here</a>
       <br><br></p>
-      <h3 id="language-and-framework-security">Language and Framework security</h3>
+      <h3 id="language-and-framework-security" style="background-color: yellow;">Language and Framework security</h3>
       <p>This security stack focuses on all open source programming languages and its associated frameworks that are used to build various applications. These programming languages will be assessed and their vulnerabilities remediated. </p>
       <blockquote>
       <p><strong>Python-Django</strong></p>
       </blockquote>
-      <table>
+      <table id="customers">
       <thead>
       <tr>
       <th>Sl.No</th>
@@ -224,21 +280,21 @@ body {
       <td>bes-pythonDjangodev-env</td>
       <td></td>
       <td>Git, Python, VSCode, pytest, jenkins</td>
-      <td>R G&amp;A</td>
+      <td>Research and Analysis</td>
       </tr>
       <tr>
       <td>02</td>
       <td>bes-pythonDjangosec-env</td>
       <td></td>
       <td>Git, bes-appsastsec-env, bes-pensec-env, Pypi, Python</td>
-      <td>R G&amp;A</td>
+      <td>Research and Analysis</td>
       </tr>
       </tbody>
       </table>
       <blockquote>
       <p><strong>Java-Spring</strong></p>
       </blockquote>
-      <table>
+      <table id="customers">
       <thead>
       <tr>
       <th>Sl.No</th>
@@ -254,25 +310,25 @@ body {
       <td>bes-javaSpringdev-env</td>
       <td></td>
       <td>Git, openJDK, Apache Maven, Junit, Selenium, Jenkins</td>
-      <td>R G&amp;A</td>
+      <td>Research and Analysis</td>
       </tr>
       <tr>
       <td>02</td>
       <td>bes-javaSpringsec-env</td>
       <td></td>
       <td>Git, openJDK, bes-appsastsec-env, bes-pensec-env,</td>
-      <td>R G&amp;A</td>
+      <td>Research and Analysis</td>
       </tr>
       </tbody>
       </table>
-      <p>Need help to view the  utility version ? <a href="../utility-catelog/">click here</a>
+      <p>Need help to view the  utility version ? <a href="./utility-catelog.html">click here</a>
       <br><br></p>
-      <h3 id="application-security">Application security</h3>
+      <h3 id="application-security" style="background-color:tomato">Application security</h3>
       <p>This security stack focuses on all open source applications and how they can be secured.</p>
       <blockquote>
       <p><strong>Drupal</strong></p>
       </blockquote>
-      <table>
+      <table id="customers">
       <thead>
       <tr>
       <th>Sl.No</th>
@@ -288,21 +344,21 @@ body {
       <td>bes-drupaldev-env</td>
       <td></td>
       <td>TBD</td>
-      <td>R G&amp;A</td>
+      <td>Research and Analysis</td>
       </tr>
       <tr>
       <td>02</td>
       <td>bes-drupalsec-env</td>
       <td></td>
       <td>TBD, bes-appsastsec-env, bes-appdastsec-env, bes-pensec-env</td>
-      <td>R G&amp;A</td>
+      <td>Research and Analysis</td>
       </tr>
       </tbody>
       </table>
       <blockquote>
       <p><strong>Odoo</strong></p>
       </blockquote>
-      <table>
+      <table id="customers">
       <thead>
       <tr>
       <th>Sl.No</th>
@@ -318,25 +374,25 @@ body {
       <td>bes-odoodev-env</td>
       <td></td>
       <td>TBD</td>
-      <td>R G&amp;A</td>
+      <td>Research and Analysis</td>
       </tr>
       <tr>
       <td>02</td>
       <td>bes-odoosec-env</td>
       <td></td>
       <td>TBD, bes-appsastsec-env, bes-appdastsec-env, bes-pensec-env</td>
-      <td>R G&amp;A</td>
+      <td>Research and Analysis</td>
       </tr>
       </tbody>
       </table>
-      <p>Need help to view the  utility version ? <a href="../utility-catelog/">click here</a>
+      <p>Need help to view the  utility version ? <a href="./utility-catelog.html">click here</a>
       <br><br></p>
-      <h3 id="distributed-application-and-blockchain-security">Distributed Application and Blockchain Security</h3>
+      <h3 id="distributed-application-and-blockchain-security" style="background-color:teal" >Distributed Application and Blockchain Security</h3>
       <p>This security stack focuses on all open source based distributed applications and blockchain frameworks. Majority of blockchain frameworks are open source in nature.</p>
       <blockquote>
       <p><strong>Hyperledger Indy</strong></p>
       </blockquote>
-      <table>
+      <table id="customers">
       <thead>
       <tr>
       <th>Sl.No</th>
@@ -352,21 +408,21 @@ body {
       <td>bes-hyperledgerIndydev-env</td>
       <td></td>
       <td>Git, Python, Pypi, VSCode, Indy-node, Indy-sdk, crypto, Jenkins</td>
-      <td>R G&amp;A</td>
+      <td>Research and Analysis</td>
       </tr>
       <tr>
       <td>02</td>
       <td>bes-hyperledgerIndysec-env</td>
       <td></td>
       <td>TBD, bes-appsastsec-env, bes-appdastsec-env, bes-pensec-env, Git</td>
-      <td>R G&amp;A</td>
+      <td>Research and Analysis</td>
       </tr>
       </tbody>
       </table>
       <blockquote>
       <p><strong>Hyperledger Fabric</strong> </p>
       </blockquote>
-      <table>
+      <table id="customers">
       <thead>
       <tr>
       <th>Sl.No</th>
@@ -382,25 +438,25 @@ body {
       <td>bes-hyperledgerFabricdev-env</td>
       <td></td>
       <td>Git, Go, NPM, Docker, NodeJS, Jnekins, Docker compose, VSCode</td>
-      <td>R G&amp;A</td>
+      <td>Research and Analysis</td>
       </tr>
       <tr>
       <td>02</td>
       <td>bes-hyperledgerFabricsec-env</td>
       <td></td>
       <td>Git, Go, bes-appsastsec-env, bes-appdastsec-env, NPM, Docker</td>
-      <td>R G&amp;A</td>
+      <td>Research and Analysis</td>
       </tr>
       </tbody>
       </table>
-      <p>Need help to view the  utility version ? <a href="../utility-catelog/">click here</a>
+      <p>Need help to view the  utility version ? <a href="./utility-catelog.html">click here</a>
       <br><br></p>
-      <h3 id="open-source-security-tool">Open source Security Tool</h3>
+      <h3 id="open-source-security-tool" style="background-color:royalblue" >Open source Security Tool</h3>
       <p>This security stack focuses on all open source security tools and to secure these tools for utilization.</p>
       <blockquote>
       <p><strong>Application Security Testing (SAST )</strong></p>
       </blockquote>
-      <table>
+      <table id="customers">
       <thead>
       <tr>
       <th>Sl.No</th>
@@ -416,14 +472,14 @@ body {
       <td>bes-appsastsec-env</td>
       <td></td>
       <td>SAST-LGTM, Sonarqube, Semgrep, Gosec, OpenVAS, Vega, Grabber</td>
-      <td>R G&amp;A</td>
+      <td>Research and Analysis</td>
       </tr>
       </tbody>
       </table>
       <blockquote>
       <p><strong>Application Security Testing (DAST)</strong></p>
       </blockquote>
-      <table>
+      <table id="customers">
       <thead>
       <tr>
       <th>Sl.No</th>
@@ -439,14 +495,14 @@ body {
       <td>bes-pensec-env</td>
       <td></td>
       <td>DAST - ZAP, GoLismero, Metasploit, Burp Suite CE</td>
-      <td>R G&amp;A</td>
+      <td>Research and Analysis</td>
       </tr>
       </tbody>
       </table>
       <blockquote>
       <p><strong>Penetration Testing</strong></p>
       </blockquote>
-      <table>
+      <table id="customers">
       <thead>
       <tr>
       <th>Sl.No</th>
@@ -462,11 +518,11 @@ body {
       <td>bes-pensec-env</td>
       <td></td>
       <td>Kali Linux, Parrot Sec</td>
-      <td>R G&amp;A</td>
+      <td>Research and Analysis</td>
       </tr>
       </tbody>
       </table>
-      <p>Need help to view the  utility version ? <a href="../utility-catelog/">click here</a></p>
+      <p>Need help to view the  utility version ? <a href="./utility-catelog.html">click here</a></p>
       
         <br>
           
@@ -484,9 +540,9 @@ body {
 
 </div>
 
-<div class="footer">
+<!-- <div class="footer">
 <h2>Footer</h2>
-</div>
+</div> -->
 
 </body>
 </html>

@@ -12,7 +12,7 @@ body {
   line-height: 1.42857143;
   color: #333;  
   padding: 10px;
-  background: #f1f1f1;
+  background: #0c3272;
 }
 
 /* Header/Blog Title */
@@ -94,6 +94,61 @@ body {
   margin-top: 20px;
 }
 
+
+
+.styled-table {
+    
+    border: 0;
+    margin: 25px 0;
+    background-color: whitesmoke;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+  }
+  
+  .styled-table th,
+  .styled-table td {
+    padding: 12px 30px;
+    border: 0;
+  }
+  
+  .styled-table tbody tr {
+    border: 0;
+  }
+  
+  .styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+  }
+  
+  .styled-table tbody tr:last-of-type {
+    border: 0;
+  }
+  
+  .styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #6a9800;
+  }
+
+  .styled-table button1 {
+  background-color: rgb(99, 158, 99);
+  width: 160px;
+  border: 5px solid rgb(101, 146, 101);
+  padding: 5px;
+  margin: 7px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+  border-radius: 30px;
+  }
+
+  .styled-table a {
+    text-decoration: none;
+    color: black;
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
   .leftcolumn, .rightcolumn {   
@@ -109,105 +164,177 @@ body {
     width: 100%;
   }
 }
+
+
 </style>
 </head>
 <body>
-
-<div class="header">
-  <table>
-<tr><td><img src="./dist/images/besec_logo.jpg" style="width: 120px; height: 120px;"></td></tr>
-  </table>
-  <br><b>An umbrella of open source security projects and utilities</b>
-</div>
+    <div class="header">
+        <table>
+      <tr><td><img src="./dist/images/besec_logo.jpg" style="width: 120px; height: 120px;"></td></tr>
+        </table>
+        <br><b>An umbrella of open source security projects and utilities</b>
+    </div>
+</body>
 
 <div class="topnav">
   <a href="./base.html">Home</a>
-
-  <!-- <a href="#" style="float:right">Next page</a> -->
+  <a href="./tech-stack.html" style="float:right">Tech stack</a>
+  <a href="./security-analysis.html" style="float:right">Analysis</a>
 </div>
 
-<div class="row">
-  <div class="leftcolumn">
-    <div class="card">
+    <!-- PROJECT STIX Shiftery DETAILS -->
+<table class="styled-table">
+    <tr>
+        <th><h2 style="text-align:left; color: orange;">STIX Shiftery</h2></th>
+        <th></th>
+    </tr>
+  <tbody>
+    <tr>
+        <td><img src="pic_trulli.JPG" alt="Trulli" width="150px" height="150px"></td>
+        <td>Structured Threat Information eXpression (STIX™) is a language and serialization format that organizations can use to exchange cyber threat intelligence (CTI). CTI is represented with objects and descriptive relationships and stored as JSON for machine readability.
+          <br><h4 style="text-align:left;" > <a href="https://github.com/opencybersecurityalliance/stix-shifter">LEARN MORE > ></a></h1>
+        <br>
+        <button1><a href="https://github.com/Be-Secure/stix-shifter">Be-Secure code</a></button1>
+        <button1><a href="https://github.com/opencybersecurityalliance/stix-shifter">&nbsp;&nbsp;&nbsp;Native code  &nbsp;&nbsp;&nbsp;&nbsp;  </a> </button1>
+        </td>
+    </tr>
 
-      <p><b> As part of the Be-Secure project, the community will be tracking the following projects –</b>
-        <p><br></p>
-        <table  style="border: none">
+   
+  </tbody>
+  </table>
+
+  <table class="styled-table">
+    
+    <tr>
+        <th><h1 style="text-align:left;color: orange;" >NIST SCAP v2</h1></th>
+        <th></th>
+    </tr>
+
+<tbody>
+    <tr>
+        <td><img src="pic_trlli.JPG" alt="Trulli" width="150" height="200"></td>
+        <td>The oscap program is a command line tool that allows users to load, scan, validate, edit, and export SCAP documents. Homepage of the project can be accessed in the site www.open-scap.org </p>
+        <br>User Manual: OpenSCAP User Manual
+        <br>Compilation, testing and debugging: OpenSCAP Developer Manual
+        <br>For new contributors: How to contribute
+        <br><h4 style="text-align:left;" > <a href="https://github.com/OpenSCAP/openscap">LEARN MORE ></a></h1>
+        <br>
+        <button1><a href="https://github.com/Be-Secure/openscap">Be-Secure code</a></button1>
+        <button1><a href="https://github.com/OpenSCAP/openscap">Native code  &nbsp;&nbsp;&nbsp;&nbsp;  </a> </button1>
+    </td>
+    </tr>
+    <tr>
         
-        <tr  style="border: none"><td  style="border: none"><b>STIX Shifter </b></td>
-        <td style="border: none">STIX-shifter is an open source python library allowing software to connect to products that house data repositories by using STIX Patterning, and return results as STIX Observations. 
-        
-        <br><p></td></tr><td style="border : none ;"> <a href="https://github.com/OpenSCAP/openscap "><right>LEARN MORE  <p><p></right> <a> </td>
-        
-        
-        <tr style="border: none"><td style="border: none"><p><b>OpenDXL Ontology</b></td>
-        <td style="border: none">The OpenDXL Ontology project is focused on the development of an open and interoperable cybersecurity messaging format for use with the OpenDXL messaging bus. <br><p></td></tr><td style="border : none ;"> <a href="https://github.com/Be-Secure/opendxl-ontology "><right>LEARN MORE</right> <a> </td>
-        
-        
-        <tr style="border: none"><td style="border: none"><b><b>Hyperledger Fabric</b></td>
-        <td style="border: none">Hyperledger Fabric delivers a uniquely elastic and extensible architecture, distinguishing it from alternative blockchain solutions. Planning for the future of enterprise blockchain requires building on top of a fully-vetted, open source architecture; Hyperledger Fabric is your starting point.
-         <br><p></td></tr><td style="border : none ;"> <a href="https://github.com/Be-Secure/fabric "><right>LEARN MORE</right> <a> </td>
-        
-        
-        <tr style="border: none"><td style="border: none"><b>Hyperledger Indy</b></td>
-        <td style="border: none">This is the official SDK for Hyperledger Indy, which provides a distributed-ledger-based foundation for self-sovereign identity. Indy provides a software ecosystem for private, secure, and powerful identity, and the Indy SDK enables clients for it. The major artifact of the SDK is a C-callable library; there are also convenience wrappers for various programming languages and Indy CLI tool.
-         <br><p></td></tr><td style="border : none ;"> <a href="https://github.com/Be-Secure/indy-sdk "><right>LEARN MORE</right> <a> </td>
-        
-        
-        <tr style="border: none"><td style="border: none"><b>Hyperledger Sawtooth</b></td>
-        <td style="border: none">Hyperledger Sawtooth is an enterprise solution for building, deploying, and running distributed ledgers (also called blockchains). It provides an extremely modular and flexible platform for implementing transaction-based updates to shared state between untrusted parties coordinated by consensus algorithms.
-         <br><p></td></tr><td style="border : none ;"> <a href="https://github.com/Be-Secure/sawtooth-core "><right>LEARN MORE</right> <a> </td>
-        
-         <tr style="border: none"><td style="border: none"><b>Hyperledger BESU</b></td>
-        <td style="border: none">Besu is an Apache 2.0 licensed, MainNet compatible, Ethereum client written in Java.
-         <br><p></td></tr><td style="border : none ;"> <a href="https://github.com/Be-Secure/besu"><right>LEARN MORE</right> <a> </td>
-        
-        
-         <tr style="border: none"><td style="border: none"><b>Hyperledger BURROW</td>
-        <td style="border: none">Hyperledger Burrow is a permissioned Ethereum smart-contract blockchain node. It executes Ethereum EVM and WASM smart contract code (usually written in Solidity) on a permissioned virtual machine. Burrow provides transaction finality and high transaction throughput on a proof-of-stake Tendermint consensus engine.
-         <br><p></td></tr><td style="border : none ;"> <a href="https://github.com/Be-Secure/burrow"><right>LEARN MORE</right> <a> </td>
-        
-        
-          <tr style="border: none"><td style="border: none"><b>Hyperledger IROHA</td>
-        <td style="border: none">Iroha is a straightforward distributed ledger technology (DLT), inspired by Japanese Kaizen principle — eliminate excessiveness (muri). Iroha has essential functionality for your asset, information and identity management needs, at the same time being an efficient and trustworthy crash fault-tolerant tool for your enterprise needs.
-         <br><p></td></tr><td style="border : none ;"> <a href="https://github.com/Be-Secure/iroha"><right>LEARN MORE</right> <a> </td>
-        
-        
-          <tr style="border: none"><td style="border: none"><b>Hyperledger ARIES</td>
-        <td style="border: none">Hyperledger Aries allows trusted online peer-to-peer interactions based on decentralized identities and verifiable credentials. Aries includes a protocol definition, tools, and reference implementations. The Aries protocol supports identities rooted in a variety of distributed ledgers or blockchains. This approach to identity is often called Self Soverign Identity (SSI).
-         <br><p></td></tr><td style="border : none ;"> <a href="https://github.com/Be-Secure/aries"><right>LEARN MORE</right> <a> </td>
-        
-          <tr style="border: none"><td style="border: none"><b>Hyperledger CACTUS</b></td>
-        <td style="border: none">Hyperledger Cactus aims to provide Decentralized, Secure and Adaptable Integration between Blockchain Networks. Hyperledger Cactus is currently undergoing a major refactoring effort to enable the desired to-be architecture which will enable plug-in based collaborative development to increase the breadth of use cases & Ledgers supported.
-         <br><p></td></tr><td style="border : none ;"> <a href="https://github.com/Be-Secure/cactus"><right>LEARN MORE</right> <a> </td>
-        
-         <tr style="border: none"><td style="border: none"><b>Hyperledger CELLO</b></td>
-        <td style="border: none">Hyperledger Cello is a blockchain provision and operation system, which helps manage blockchain networks in an efficient way.
-         <br><p></td></tr><td style="border : none ;"> <a href="https://github.com/Be-Secure/cello"><right>LEARN MORE</right> <a> </td>
-        
-          <tr style="border: none"><td style="border: none"><b>Hyperledger CALIPER</b></td>
-        <td style="border: none">Caliper is a blockchain performance benchmark framework, which allows users to test different blockchain solutions with predefined use cases, and get a set of performance test results.
-         <br><p></td></tr><td style="border : none ;"> <a href="https://github.com/Be-Secure/caliper"><right>LEARN MORE</right> <a> </td>
-        
-          <tr style="border: none"><td style="border: none"><b>DefectDojo</b></td>
-        <td style="border: none">DefectDojo is a security program and vulnerability management tool. DefectDojo allows you to manage your application security program, maintain product and application information, triage vulnerabilities and push findings into defect trackers.
-         <br><p></td></tr><td style="border : none ;"> <a href="https://github.com/Be-Secure/django-DefectDojo"><right>LEARN MORE</right> <a> </td>
-        
-        </table>
-        
-          <br>
-            
-     
-</div>
+    </tr>
+   
+
+</tbody>
+</table>
+
+<table class="styled-table">
+    <tr>
+        <th><h1 style="text-align:left;color: orange;" >Hyperledger Fabric</h1></th>
+        <th></th>
+    </tr>
+
+<tbody>
+    <tr>
+        <td><img src="pic_truli.JPG" alt="Trulli" width="150" height="200"></td>
+        <td>This project is an Active Hyperledger project. Hyperledger Fabric is a platform for distributed ledger solutions, underpinned by a modular architecture delivering high degrees of confidentiality, resiliency, flexibility and scalability. It is designed to support pluggable implementations of different components, and accommodate the complexity and intricacies that exist across the economic ecosystem.
+        <p>Hyperledger Fabric delivers a uniquely elastic and extensible architecture, distinguishing it from alternative blockchain solutions. Planning for the future of enterprise blockchain requires building on top of a fully-vetted, open source architecture; Hyperledger Fabric is your starting point.
+        <br><h4 style="text-align:left;" > <a href="https://github.com/hyperledger/fabric">LEARN MORE ></a></h1>
+        <br>
+        <button1><a href="https://github.com/Be-Secure/fabric">Be-Secure code</a></button1>
+        <button1><a href="https://github.com/hyperledger/fabric">Native code  &nbsp;&nbsp;&nbsp;&nbsp;  </a> </button1>
+    </td>
+    </tr>
+    <tr>
+       
+    </tr>
+ 
+</tbody>
+</table>
 
 
-</div>
+<table class="styled-table">
+    
+    <tr>
+        <th><h1 style="text-align:left;color: orange;" >Hyperledger Indy</h1></th>
+        <th></th>
+    </tr>
 
-</div>
+<tbody>
+    <tr>
+        <td><img src="pic_truli.JPG" alt="Trulli" width="150" height="200"></td>
+        <td>This is the official SDK for Hyperledger Indy, which provides a distributed-ledger-based foundation for self-sovereign identity. Indy provides a software ecosystem for private, secure, and powerful identity, and the Indy SDK enables clients for it. The major artifact of the SDK is a C-callable library; there are also convenience wrappers for various programming languages and Indy CLI tool.
+        <br><h4 style="text-align:left;" > <a href="https://github.com/hyperledger/indy-sdk">LEARN MORE ></a></h1>
+        <br>
+        <button1><a href="https://github.com/Be-Secure/indy-sdk">Be-Secure code</a></button1>
+        <button1><a href="https://github.com/hyperledger/indy-sdk">Native code  &nbsp;&nbsp;&nbsp;&nbsp;  </a> </button1>
+    </td>
+    </tr>
+    <tr>
+       
+    </tr>
+   
+</tbody>
+</table>
 
-<div class="footer">
+<table class="styled-table">
+    
+    <tr>
+        <th><h1 style="text-align:left ;color: orange;">Hyperledger Sawtooth</h1></th>
+        <th></th>
+    </tr>
+
+<tbody>
+    <tr>
+        <td><img src="pic_truli.JPG" alt="Trulli" width="150" height="200"></td>
+        <td>Hyperledger Sawtooth is an enterprise solution for building, deploying, and running distributed ledgers (also called blockchains). It provides an extremely modular and flexible platform for implementing transaction-based updates to shared state between untrusted parties coordinated by consensus algorithms.
+        <br><h4 style="text-align:left;" > <a href="https://github.com/hyperledger/sawtooth-core">LEARN MORE ></a></h1>
+        <br>
+        <button1><a href="https://github.com/Be-Secure/sawtooth-core">Be-Secure code</a></button1>
+        <button1><a href="https://github.com/hyperledger/sawtooth-core">Native code  &nbsp;&nbsp;&nbsp;&nbsp;  </a> </button1>
+    </td>
+    </tr>
+    <tr>
+        
+    </tr>
+   
+</tbody>
+</table>
+
+
+
+    <!-- PROJECT STIX Shiftery DETAILS -->
+    <table class="styled-table">
+        <tr>
+            <th><h1 style="text-align:left; color: orange;" >OpenDXL Ontology</h1></th>
+            <th></th>
+        </tr>
+      <tbody>
+        <tr>
+            <td><img src="pic_trulli.JPG" alt="Trulli" width="150px" height="150px"></td>
+            <td>The OpenDXL Ontology project is focused on the development of an open and interoperable cybersecurity messaging format for use with the OpenDXL messaging bus.
+              <br><h4 style="text-align:left;" > <a href="https://github.com/opencybersecurityalliance/opendxl-ontology">LEARN MORE > ></a></h1>
+            <br>
+            <button1><a href="https://github.com/Be-Secure/opendxl-ontology">Be-Secure code</a></button1>
+            <button1><a href="https://github.com/opencybersecurityalliance/opendxl-ontology">&nbsp;&nbsp;&nbsp;Native code  &nbsp;&nbsp;&nbsp;&nbsp;  </a> </button1>
+            </td>
+        </tr>
+    
+       
+      </tbody>
+      </table>
+
+
+ 
+
+
+<!-- <div class="footer">
 <h2>Footer</h2>
-</div>
+</div> -->
 
 </body>
 </html>
