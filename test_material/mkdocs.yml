@@ -1,0 +1,27 @@
+site_name: My Docs
+site_url: https://example.com/
+
+theme:
+  name: material
+  custom_dir: overrides
+  # features:
+  #   - navigation.tabs
+markdown_extensions:
+  - meta
+
+extra_css:
+  - stylesheet/extra.css
+
+extra_javascript:
+  - javascripts/main.min.js
+
+
+plugin:
+  - macros
+
+
+nav:
+  - Home: index.md
+  - Getting Started: getting_started.md
+
+

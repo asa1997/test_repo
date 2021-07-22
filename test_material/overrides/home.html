@@ -1,0 +1,143 @@
+{% extends "main.html" %}
+
+{% block extrahead %}
+    {{ super() }}
+    {% set title = config.site_name %}
+    <link rel="stylesheet" href="{{ 'stylesheets/extra.css' | url }}">
+    <style>
+        /* body {
+            padding: 50px;
+        } */
+    </style>
+{% endblock %}
+{% block content %}
+<body class="is-boxed has-animations" style="padding: 0px;">
+    <div class="body-wrap">
+        <header class="site-header">
+            <div class="container">
+                <div class="site-header-inner">
+                    <div class="brand header-brand">
+                        <h1 class="m-0">
+							<a href="#">
+								<img class="header-logo-image" src="../docs/images/logo.svg" alt="Logo">
+                            </a>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="hero">
+                <div class="container">
+                    <div class="hero-inner">
+						<div class="hero-copy">
+	                        <h1 class="hero-title mt-0">KochiOrgBook</h1>
+	                        <p class="hero-paragraph">Digital Trust Ecosystem project for the city of Kochi.</p>
+                            <div class="hero-cta"><a class="button button-primary" href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | e }}">Learn more</a></div>
+						</div>
+                       
+						<!-- <div class="hero-figure anime-element">
+							<svg class="placeholder" width="528" height="396" viewBox="0 0 528 396">
+								<rect width="528" height="396" style="fill:transparent;" />
+							</svg>
+							<div class="hero-figure-box hero-figure-box-01" data-rotation="45deg"></div>
+							<div class="hero-figure-box hero-figure-box-02" data-rotation="-45deg"></div>
+							<div class="hero-figure-box hero-figure-box-03" data-rotation="0deg"></div>
+							<div class="hero-figure-box hero-figure-box-04" data-rotation="-135deg"></div>
+							<div class="hero-figure-box hero-figure-box-05"></div>
+							<div class="hero-figure-box hero-figure-box-06"></div>
+							<div class="hero-figure-box hero-figure-box-07"></div>
+							<div class="hero-figure-box hero-figure-box-08" data-rotation="-22deg"></div>
+							<div class="hero-figure-box hero-figure-box-09" data-rotation="-52deg"></div>
+							<div class="hero-figure-box hero-figure-box-10" data-rotation="-50deg"></div>
+						</div> -->
+                    </div>
+                </div>
+                
+            </section>
+
+            <div class="container">
+            <div class="hero-inner">
+            <p style="text-align: center;color: white;">KOB is a technology demonstrator to launch a DID based public identity utility compliant with the ToIP standards to enable Trusted digital verification service for various association within the city of Kochi.​</p>
+            </div>
+            </div>
+            
+            <section class="features section">
+                <div class="container">
+					<div class="features-inner section-inner has-bottom-divider">
+                        <div class="features-wrap">
+                            <div class="feature text-center is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+										<img src="dist/images/icons8-security-shield-green-50.png" alt="Feature 01">
+                                    </div>
+                                    <h4 class="feature-title mt-24">Privacy</h4>
+                                    <p class="text-sm mb-0">Fermentum posuere urna nec tincidunt praesent semper feugiat nibh. A arcu cursus vitae congue mauris. Nam at lectus urna duis convallis. Mauris rhoncus aenean vel elit scelerisque mauris.</p>
+                                </div>
+                            </div>
+							<div class="feature text-center is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+										<img src="dist/images/icons8-fingerprint-50.png" alt="Feature 02">
+                                    </div>
+                                    <h4 class="feature-title mt-24">Ownership of Identity</h4>
+                                    <p class="text-sm mb-0">Fermentum posuere urna nec tincidunt praesent semper feugiat nibh. A arcu cursus vitae congue mauris. Nam at lectus urna duis convallis. Mauris rhoncus aenean vel elit scelerisque mauris.</p>
+                                </div>
+                            </div>
+                            <div class="feature text-center is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+										<img src="dist/images/icons8-handshake-64.png" alt="Feature 03">
+                                    </div>
+                                    <h4 class="feature-title mt-24">Trusted Service Offerings</h4>
+                                    <p class="text-sm mb-0">Fermentum posuere urna nec tincidunt praesent semper feugiat nibh. A arcu cursus vitae congue mauris. Nam at lectus urna duis convallis. Mauris rhoncus aenean vel elit scelerisque mauris.</p>
+                                </div>
+                            </div>
+                            <div class="feature text-center is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+										<img src="dist/images/icons8-cloud-50.png" alt="Feature 04">
+                                    </div>
+                                    <h4 class="feature-title mt-24">Dedicated Community Cloud</h4>
+                                    <p class="text-sm mb-0">Fermentum posuere urna nec tincidunt praesent semper feugiat nibh. A arcu cursus vitae congue mauris. Nam at lectus urna duis convallis. Mauris rhoncus aenean vel elit scelerisque mauris.</p>
+                                </div>
+                            </div>
+							<!-- <div class="feature text-center is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+										<img src="dist/images/feature-icon-05.svg" alt="Feature 05">
+                                    </div>
+                                    <h4 class="feature-title mt-24">Be Productive</h4>
+                                    <p class="text-sm mb-0">Fermentum posuere urna nec tincidunt praesent semper feugiat nibh. A arcu cursus vitae congue mauris. Nam at lectus urna duis convallis. Mauris rhoncus aenean vel elit scelerisque mauris.</p>
+                                </div>
+                            </div>
+                            <div class="feature text-center is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+										<img src="dist/images/feature-icon-06.svg" alt="Feature 06">
+                                    </div>
+                                    <h4 class="feature-title mt-24">Be Productive</h4>
+                                    <p class="text-sm mb-0">Fermentum posuere urna nec tincidunt praesent semper feugiat nibh. A arcu cursus vitae congue mauris. Nam at lectus urna duis convallis. Mauris rhoncus aenean vel elit scelerisque mauris.</p>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+    </div>
+</body>
+{% endblock %}
+        <!-- <main>
+            <section class="hero">
+                <div class="container">
+                    <div class="hero-inner">
+						<div class="hero-copy">
+	                        <h1 class="hero-title mt-0">KochiOrgBook</h1>
+	                        <p class="hero-paragraph">Digital Trust Ecosystem project for the city of Kochi.</p>
+                            <div class="hero-cta"><a class="button button-primary" href="dist/images/icons8-cloud-50.png">Learn more</a></div>
+						</div> -->
+                       
+{% block scripts %}
+  {{ super() }}
+  <script src="{{ 'javascripts/main.min.js' | url }}"></script>
+{% endblock %}
