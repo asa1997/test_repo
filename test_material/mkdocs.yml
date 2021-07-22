@@ -10,7 +10,7 @@ markdown_extensions:
   - meta
 
 extra_css:
-  - stylesheet/extra.css
+  - stylesheets/extra.css
 
 extra_javascript:
   - javascripts/main.min.js
@@ -23,5 +23,7 @@ plugin:
 nav:
   - Home: index.md
   - Getting Started: getting_started.md
+  - Test:
+    - Home: test/index.md
 
 
