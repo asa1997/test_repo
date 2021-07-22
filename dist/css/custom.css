@@ -1,0 +1,140 @@
+section {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 15px;
+    line-height: 1.42857143;
+    color: rgb(0, 0, 0);  
+    padding: 30px;
+    background:rgb(252, 252, 252);
+  }
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* section {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 15px;
+    line-height: 1.42857143;
+    color: #333;  
+    padding: 30px;
+    background:rgba(0, 0, 0, 0.596);
+  } */
+  
+body.custom {
+font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+font-size: 18px;
+line-height: 1.42857143;
+color: rgb(0, 0, 0);  
+/* padding: 10px; */
+background: #f1f1f1;
+}
+
+body.custom2
+{
+font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+font-size: 20px;
+line-height: 1.42857143;
+color: rgb(0, 0, 0);  
+/* padding: 10px; */
+background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+padding: 5px;
+text-align: left;
+background: #154378;
+color: rgb(127, 178, 255);
+background-image: url("dist/images/sectools1.jpg");
+}
+
+.header h1 {
+font-size: 50px;
+}
+
+h2.custom {
+    font-size: 30px;
+    color: black;
+}
+
+/* Style the top navigation bar */
+.topnav {
+overflow: hidden;
+padding: 2px;
+background-color: rgb(17, 21, 73);
+}
+
+/* Style the topnav links */
+.topnav a {
+float: right;
+display: block;
+color: #f2f2f2;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+background-color: #ddd;
+color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+float: left;
+width: 100%;
+}
+
+/* Right column */
+.rightcolumn {
+float: left;
+width: 25%;
+background-color: #f1f1f1;
+padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+background-color: #aaa;
+width: 100%;
+padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+background-color: white;
+padding: 20px;
+margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+/* Footer */
+.footer {
+padding: 20px;
+text-align: center;
+background: #ddd;
+margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+.leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+}
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+.topnav a {
+    float: none;
+    width: 100%;
+}

@@ -1,0 +1,15 @@
+site_name: Be-Secure
+theme: 
+  name: 'material'
+  custom_dir: 'docs/overrides/'
+
+nav:
+  #- Home: ./besec_info/home.md
+  - Home: ./docs/index.md
+  - Getting Started: ./docs/besec_info/Be-secure_gettingstr.md
+  - Security Assessment:  ./besec_info/Security_assessment.md
+  - OSS projects we track:  ./besec_info/tracked_projects.md
+  - OSS projects we contribute:  ./besec_info/Project_contribute.md
+  - OSS tech stack: ./besec_info/tech_stack_details.md
+  - More details: ./besec_info/More_info.md
+
