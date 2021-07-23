@@ -4,8 +4,9 @@ site_url: https://example.com/
 theme:
   name: material
   custom_dir: overrides
-  # features:
-  #   - navigation.tabs
+  features:
+    - navigation.tabs
+    - navigation.top
 markdown_extensions:
   - meta
 
@@ -23,7 +24,7 @@ plugin:
 nav:
   - Home: index.md
   - Getting Started: getting_started.md
-  - Test:
-    - Home: test/index.md
+  - Test: test/index.md
+ 
 
 
