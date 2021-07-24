@@ -2,14 +2,15 @@ pipeline{
     
     agent any
 
-    builds{
-            build("build"){
+    stages {
+            stage("build"){
                 steps{
                     echo "demo_o31e : pipeline successull"
                     echo "path `pwd`"
                 }
             }
-            build("deploy"){
+            stage("deploy"){
+                
                 steps{
                     echo "test123"
                     echo "test345"
