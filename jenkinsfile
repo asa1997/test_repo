@@ -1,6 +1,7 @@
 pipeline{
-    agent any
     
+    agent any
+
     builds{
             build("build"){
                 steps{
