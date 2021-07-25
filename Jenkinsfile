@@ -12,7 +12,7 @@ pipeline{
             stage("deploy"){
                 
                 steps{
-                    echo "test123"
+                    echo "test12"
                     echo "test345"
                 }
             }
