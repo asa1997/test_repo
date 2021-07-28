@@ -212,3 +212,17 @@ bes-faq.md:
  * IN THE SOFTWARE.
  */
 
+#!/bin/bash
+
+for i in `cat files`;
+do
+	grep "Permission is hereby granted, free of charge" $i
+	if [ $? -eq 0 ]; then
+		echo "lines needs to be removed."
+		sed -i 1,21d $i
+		echo "removed all licence content."
+		cat $i
+	fi
+
+done
+
