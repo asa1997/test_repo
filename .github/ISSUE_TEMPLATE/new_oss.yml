@@ -1,6 +1,8 @@
 name: Track new project
 description: Request us to track a new OSS project
 title: "[Name of the project]: "
+labels: [Untracked, triage]
+  
 body:
   - type: markdown
     attributes:
@@ -84,7 +86,7 @@ body:
         - EPL-2.0
     validations:
       required: true
-      
+
 
 
 
