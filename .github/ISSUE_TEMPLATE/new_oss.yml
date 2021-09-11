@@ -1,36 +1,23 @@
-name: Track new project
-description: Request us to track a new OSS project
-title: "[Name of the project]: "
+name: New TAVOSS Tracking Request
+description: Request Be-Secure to track new /existing open source project/version
+title: "TAVOSS-TR:<Enter the name of the project here>"
 labels: [Untracked, triage]
   
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for reaching out to us. Please fill out the below details. (*) fields are required.
-  # - type: input
-  #   id: tech_stack_classification
-  #   attributes:
-  #     label: Tech Stack
-  #     description: Tech stack the project belongs to. [Learn more](https://be-secure.github.io/Be-Secure/tech_stack.html)
-  #     placeholder: Application [A]/DevOps [DO]
-  #   validations:
-  #     required: true
-  # - type: checkboxes
-  #   id: tech_stack
-  #   attributes:
-  #     label: Tech Stack
-  #     description: Mention the tech stack the project belongs to. [Learn more](https://be-secure.github.io/Be-Secure/tech_stack.html)
-  #     options:
-  #       - label: DevOps [DO]
-  #         required: false
-  #       - label: Language and Framwork [L&F]
-  #       - label: Application [A]
-  #       - label: Distributed and Decentralized Application [DA]
-  #       - label: Open-source Security Tool [S]
-  #   validations:
-  #     required: true
-
+        Thanks for reaching out to us. Please fill out the below details. Make sure the name of the project is prefixed by "TAVOSS-TR"
+      
+  
+  - type: input
+    id: version
+    attributes:
+      label: Version of the project
+      placeholder: Enter the version of the project
+    validations:
+      required: true
+      
   - type: dropdown
     id: tech_stack
     attributes:
@@ -45,14 +32,68 @@ body:
     validations:
       required: true
 
-  - type: input
+  - type: textarea
     id: details
     attributes:
       label: Project details
-      description: Enter details about the project - What is it? What does it do? ...
+      description: Enter details about the project.
+      placeholder: |
+        Tell us about
+        1. What the project is 
+        2. What does it do
+        3. Key features
+    validations:
+      required: true
+      
+  - type: input
+    id: lang
+    attributes:
+      label: Languages used
+      placeholder: Enter the languages used.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: domain
+    attributes:
+      label: Domain
+      description: Specify the domain the project belongs to. [Learn more](../../references.md)
+      options:
+        - Security
+        - Technology
+        - Both
+  
+  - type: dropdown
+    id: industry
+    attributes:
+      label: Industry
+      options:
+        - Banking & Financial Institutions
+        - Healthcare & Life Scienses
+        - Consumer 
+        - Retail
+        - Agritech
+        - Education
+        - Non Profit & Govt
+        - Energy & Utilities
+        - All
+        - Automotive
+        - Telecom
+        - Cybersecurity
     validations:
       required: true
   
+  - type: dropdown
+    id: com
+    attributes:
+      label: Open Source Project type
+      options:
+        - Foundation led
+        - Community led
+        - Others
+    validations:
+      required: true
+
   - type: input
     id: repo
     attributes:
@@ -79,13 +120,36 @@ body:
         - BSD-3-Clause
         - BSD-2-Clause
         - GPL
+        - GPL-2.0
+        - GPL-3.0
         - LGPL
+        - LGPL-2.1
+        - LGPL-3.0
         - MIT
         - MPL-2.0
         - CDDL-1.0
         - EPL-2.0
+        - others
     validations:
       required: true
+
+  - type: input
+    id: license_others
+    attributes:
+      label: Other license
+      description: If the license of the project is not displayed in the above list, please mention it below.
+    validations:
+      required: false
+
+  - type: textarea
+    attributes:
+      label: Reason , why we must track this project.
+      placeholder: |
+        Talk about its
+        1. business relevance 
+        2. impact in the current market
+        3. merits over similar projects etc.
+        
 
 
 
