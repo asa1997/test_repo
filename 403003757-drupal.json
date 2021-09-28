@@ -1,7 +1,4 @@
-word = 
-[
-    
-    {
+ {
         "id": 403007048,
         "node_id": "MDEwOlJlcG9zaXRvcnk0MDMwMDcwNDg=",
         "name": "drupal",
@@ -13,5 +10,5 @@ word =
             "count": 3
 
         }
-    }
-]
+ }
+
