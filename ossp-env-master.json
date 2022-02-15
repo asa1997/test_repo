@@ -1,0 +1,61 @@
+{
+    "id": 90,
+    "name": "drupal",
+    "env_details": [
+
+        {
+            "name": "drupal-RT-env",
+            "type": "Red Teaming",
+            "description": "User will get drupal 8.6.5 with with all its dependencies.",
+            "packages": [
+                {
+                    "name": "apache",
+                    "version": "2.3"
+                },
+                {
+                    "name": "php",
+                    "version": "7.2"
+                },
+                {
+                    "name": "mysql",
+                    "version": "14.14"
+
+                },
+                {
+                    "name": "drupal",
+                    "version": "8.6.5"
+                }
+            ]
+        },
+        {
+            "name": "drupal-BT-env",
+            "type": "Blue Teaming",
+            "description": "User will get drupal 8.6.5 with with all its dependencies.",
+            "packages": [
+                {
+                    "name": "apache",
+                    "version": "2.3"
+                },
+                {
+                    "name": "php",
+                    "version": "7.2"
+                },
+                {
+                    "name": "mysql",
+                    "version": "14.14"
+
+                },
+                {
+                    "name": "drupal",
+                    "version": "8.6.5"
+                },
+                {
+                    "name": "drupal",
+                    "version":"8.6.6"
+                }
+            ]
+        }
+        
+    ]
+
+}
