@@ -1,0 +1,21 @@
+---
+- name: fileinline ops
+  hosts: localhost
+  become: true
+  vars:
+    my_list:
+      - "<Directory /var/www/html>"
+      - "AllowOverride All"
+      - "<Directory>"
+  tasks:
+    - name: Converting to string
+      set_fact:
+        my_string: "{{ my_list | join('\n\t') }}"
+    - name: Enable necessary .htaccess overrides
+      become: true
+      ansible.builtin.lineinfile:
+        path: /home/arun/test.txt
+        line: "\t{{ my_string }}"      
+        insertafter: DocumentRoot.*
+        
+
