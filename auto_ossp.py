@@ -4,7 +4,36 @@ import sys
 from urllib.request import urlopen
 import requests
 
-def write_cve_data(product_name,f):
+def write_to_osspcve(soup, issue_id):
+    maintain_table = soup.find('div', attrs={'id':'contentdiv'})
+    h1 = maintain_table.find('h1')
+    title_list = h1.text.split()
+    product = title_list[2]
+    table = soup.find('table', attrs={'class':'stats'})
+    table_body = table.find('tbody')
+    rows = table_body.find_all('tr')
+    vuln_headers = ["No_of_Vulnerabilities", "DoS", "Code_Execution", "Overflow", "Memory_Corruption", "Sql_Injection", "XSS", "Directory_Traversal", "Http_Response_Splitting", "Bypass_something", "Gain_Information", "Gain_Privileges", "CSRF", "File_Inclusion", "No_of_exploits"]
+    f = open(str(issue_id)+"-"+product+"-CVEdetails.json", "w")
+    json_array=[]
+    for j in range(1,len(rows)):  
+        json_data = {}  
+        vuln_data = rows[j].find_all('td')  
+        if j == len(rows)-1 or j == len(rows)-2:
+            json_data["Year"] = str(rows[j].find('th').text.strip())
+        else:
+            json_data["Year"] = int(rows[j].find('th').text.strip())
+        for i in range(0,len(vuln_data)):
+            if len(vuln_data[i].text.strip()) == 0:
+                json_data[vuln_headers[i]] = ""
+            elif j == len(rows)-1:
+                json_data[vuln_headers[i]] = float(vuln_data[i].text.strip())
+            else:
+                json_data[vuln_headers[i]] = int(vuln_data[i].text.strip())
+        json_array.append(json_data)
+            
+    f.write(json.dumps(json_array, indent=4)) 
+
+def write_cve_data(issue_id,f):
     cve_avail = input("Enter latest cve count?(y/n)")
     cvedetails = {
         "count": 0,    
@@ -22,9 +51,13 @@ def write_cve_data(product_name,f):
     #     sys.exit(str(e))
     if cve_avail == "y":      
         product_id = input("Enter product id : ")
-        vendor_id = input("Enter vendor id : ") 
-        source = requests.get("https://www.cvedetails.com/product/"+ product_id +"/vendor_id="+ vendor_id).text
+        # vendor_id = input("Enter vendor id : ") 
+        source = requests.get("https://www.cvedetails.com/product/"+ product_id).text
         soup = BeautifulSoup(source, features="html5lib")
+        maintain_table = soup.find('div', attrs={'id':'contentdiv'})
+        h1 = maintain_table.find('h1')
+        a = h1.a.get('href').split('/')
+        vendor_id = a[2]
         table = soup.find('table', attrs={'class':'stats'})
         # print(table)
         table_body = table.find('tbody')
@@ -39,6 +72,7 @@ def write_cve_data(product_name,f):
         cvedetails["year"] = int(cols_header)
         cvedetails["cvedetails_product_id"] = str(product_id)
         cvedetails["cvedetails_vendor_id"] = str(vendor_id)
+        write_to_osspcve(soup, issue_id)
     f.write('"cvedetails": '+ json.dumps(cvedetails, indent=4)+ ",\n")
     # print(l)
         
@@ -105,11 +139,9 @@ except Exception as e:
 project_data = json.loads(json_data.read())
 f = open("ossp_data.json", "w")
 f.write("{\n")
-# f.seek(0, 2)
-# f.seek(-3, 2)
 for i in repo_keys:
     if i == "cve_details" :
-        write_cve_data(project_name, f)
+        write_cve_data(bes_id, f)
     elif i == "project_repos":
         write_project_repos_data(f, project_data)
     elif i == "tags":
